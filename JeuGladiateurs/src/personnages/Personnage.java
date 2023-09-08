@@ -29,6 +29,11 @@ public class Personnage {
 
     public Personnage() {
         // TODO : Constructeur SANS paramètres qui initialise à ZÉRO ou à ""
+        this.nom = "";
+        this.valeurMaxAttaque = 0;
+        this.valeurDefense = 0;
+        this.pointDeVie = 0;
+        this.initiative = 0;
     }
     // </editor-fold>
 
@@ -37,7 +42,49 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
     // TODO : Les getters
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getPointDeVie() {
+        return pointDeVie;
+    }
+
+    public int getValeurMaxAttaque() {
+        return valeurMaxAttaque;
+    }
+
+    public int getValeurDefense() {
+        return valeurDefense;
+    }
+    
     // TODO : Les setters
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
+    }
+
+    public void setPointDeVie(int pointDeVie) {
+        this.pointDeVie = pointDeVie;
+    }
+
+    public void setValeurMaxAttaque(int valeurMaxAttaque) {
+        this.valeurMaxAttaque = valeurMaxAttaque;
+    }
+
+    public void setValeurDefense(int valeurDefense) {
+        this.valeurDefense = valeurDefense;
+    }
+    
     // </editor-fold>
 
     // **************************************************************************
