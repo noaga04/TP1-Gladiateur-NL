@@ -74,6 +74,7 @@ public class JeuGladiateurs {
     }
 
     // TODO : Après la boucle, afficher le résultat du combat
+    affichage.afficheVictoire(Igor, Bob);
     // </editor-fold>
     }
 
