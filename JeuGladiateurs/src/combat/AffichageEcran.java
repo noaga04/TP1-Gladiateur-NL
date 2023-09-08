@@ -22,6 +22,7 @@ public class AffichageEcran {
         for (int i = 0; i < 38; i++) {
            System.out.print("*"); 
         }
+        System.out.println();
     }
 
     public void afficherSeparateurInfosPerso() {

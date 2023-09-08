@@ -122,7 +122,7 @@ public class Personnage {
     public void frapperPersonnage(Personnage personnageCible) {
         // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
         int forceDeFrappe = attaqueCalcul();
-        int defense = personnageCible.attaqueCalcul();
+        int defense = personnageCible.valeurDefense;
         int dommage = forceDeFrappe - defense;
         if (dommage < 0){
             dommage = 0;
