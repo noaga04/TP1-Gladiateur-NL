@@ -7,13 +7,13 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Attributs">
     // TODO : Mettre vos attributs ici
-    // </editor-fold>
     String nom;
     int pointDeVie;
     int valeurMaxAttaque;
     int valeurDefense;
     int initiative;
-    
+    // </editor-fold>
+ 
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
@@ -93,6 +93,18 @@ public class Personnage {
     // <editor-fold defaultstate="collapsed" desc="Mécanique de jeu">
     public void afficherInfosPersonnage() {
         // TODO : Afficher les infos du personnage, tel que montré dans l'énoncé
+        
+        System.out.println("\n" + nom);
+        System.out.println("    Attaque : " + valeurMaxAttaque);
+        System.out.println("    Défense : " + valeurDefense);
+        System.out.println("    Points de vie : " + pointDeVie);
+        System.out.println("    Initiative : " + initiative);
+        if ( pointDeVie <= 0){
+            System.out.println("    statut : Mort");
+        }
+        else{
+            System.out.println("    statut : Vivant");
+        }
     }
 
     private int attaqueCalcul() {
