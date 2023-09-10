@@ -14,6 +14,7 @@ public class Personnage {
     int valeurMaxAttaque;
     int valeurDefense;
     int initiative;
+    String classPersonnage;
     // </editor-fold>
  
     // **************************************************************************
@@ -101,6 +102,7 @@ public class Personnage {
         System.out.println("    Défense : " + valeurDefense);
         System.out.println("    Points de vie : " + pointDeVie);
         System.out.println("    Initiative : " + initiative);
+        System.out.println("    Classe : " + classPersonnage);
         if ( pointDeVie <= 0){
             System.out.println("    statut : Mort");
         }
