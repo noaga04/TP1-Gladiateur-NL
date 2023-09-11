@@ -43,7 +43,7 @@ public class Mirmillon extends Personnage {
             super.frapperPersonnage(personnageCible);
         }
         else{
-            System.out.println("Bob décapite Igor avec son arme");
+            System.out.println("Bob décapite Igor avec son arme !!");
         }
     }
 }
