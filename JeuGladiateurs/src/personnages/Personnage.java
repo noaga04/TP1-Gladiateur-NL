@@ -14,7 +14,6 @@ public class Personnage {
     int valeurMaxAttaque;
     int valeurDefense;
     int initiative;
-    String classPersonnage;
     // </editor-fold>
  
     // **************************************************************************
@@ -45,6 +44,7 @@ public class Personnage {
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Getters et setters">
     // TODO : Les getters
+    
 
     public int getInitiative() {
         return initiative;
@@ -87,7 +87,7 @@ public class Personnage {
     public void setValeurDefense(int valeurDefense) {
         this.valeurDefense = valeurDefense;
     }
-    
+
     // </editor-fold>
 
     // **************************************************************************
@@ -102,7 +102,6 @@ public class Personnage {
         System.out.println("    Défense : " + valeurDefense);
         System.out.println("    Points de vie : " + pointDeVie);
         System.out.println("    Initiative : " + initiative);
-        System.out.println("    Classe : " + classPersonnage);
         if ( pointDeVie <= 0){
             System.out.println("    statut : Mort");
         }

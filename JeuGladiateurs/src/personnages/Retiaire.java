@@ -10,4 +10,16 @@ package personnages;
  */
 public class Retiaire extends Personnage {
     
+    String classPersonnage;
+    
+    public Retiaire(String nomP, int pointAttaque, int pointDefense, int pointDeVieP, int initiativeP) {
+        super(nomP, pointAttaque, pointDefense, pointDeVieP, initiativeP);
+        this.classPersonnage = "Retiaire";
+    }
+    
+    @Override
+    public void afficherInfosPersonnage() {
+        super.afficherInfosPersonnage();
+        System.out.println("    Classe : " + classPersonnage);
+    }
 }
